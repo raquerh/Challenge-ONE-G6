@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <img class="fondo" src="imagenes/encriptador.jpg" alt="fondoDeCandado">
+
+    <header>
+
+        <div class="encabezado">
+            <img class="logo" src="imagenes/Logo.png" alt="logo alura">
+            <h1>Encriptador Challenge ONE</h1>
+            <audio class="audio" src="audio/mision_imposible.mp3" autoplay></audio>
+            <button id="boton" class="boton">Pause</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="contenedor">
+
+            <h2 class="titulomensaje">Mensaje</h2>
+            <textarea class="ingreso" id="ingreso" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="seccionalerta">
+                <p class="advertencia">&#9888; En minusculas, sin acentos ni caracteres especiales</p>
+            </div>
+
+            <div class="botones">
+                <input class="encriptar" id="encriptar" type="submit" onclick="encriptar();" value="Encriptar">
+                <input class="desencriptar" id="desencriptar" type="submit" onclick="desencriptar()"
+                    value="Desencriptar">
+                <input class="copiar" type="submit" onclick="copiar();" value="Copiar">
+                <input class="pegar" type="submit" onclick="pegar();" value="Pegar">
+            </div>
+
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <video id="candado" height="320">
+                    <source src="video/candado.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2 class="tituloresultado">Resultado</h2>
+            <textarea class="resultado" id="resultado" readonly></textarea>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <img class="logofooter" src="imagenes/logofooter.png" alt="logo alura">
+        <p>Desarrollado por Raquel Rodriguez Herlein</p>
+        <p>2024</p>
+        
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
